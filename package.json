@@ -1,0 +1,27 @@
+{
+  "name": "ergonomic-service-bindings",
+  "version": "1.0.0",
+  "description": "Ergonomic Service Bindings for Cloudflare Workers: no more pesky HTTP calls—directly call functions from your other workers",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --outfile=dist/index.js --platform=node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penalosa/ergonomic-service-bindings.git"
+  },
+  "author": "Samuel Macleod",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/penalosa/ergonomic-service-bindings/issues"
+  },
+  "homepage": "https://github.com/penalosa/ergonomic-service-bindings#readme",
+  "dependencies": {
+    "esbuild": "^0.15.5",
+    "toml": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.8"
+  }
+}
