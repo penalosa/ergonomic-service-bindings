@@ -1,6 +1,6 @@
 {
   "name": "ergonomic-service-bindings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ergonomic Service Bindings for Cloudflare Workers: no more pesky HTTP calls—directly call functions from your other workers",
   "main": "dist/index.js",
   "bin": "dist/index.js",
