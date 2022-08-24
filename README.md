@@ -35,7 +35,7 @@ Next, in your `package.json`, add a `"build"` script:
     "build": "ergonomic-service-bindings service"
 ```
 
-Finally, ensure you have a file called `src/service.ts`, which is where you'll be writing all your functions. Just export functions from here, and when you deploy your worker they'll be available to all service that bind your worker. For example, here's a hello world function:
+Finally, ensure you have a file called `src/service.ts`, which is where you'll be writing all your functions. Just export functions from here, and when you deploy your worker they'll be available to all services that bind your worker. For example, here's a hello world function:
 
 ```ts
 export async function hello(name: string) {
