@@ -3,6 +3,18 @@
 
 [Service Bindings](https://developers.cloudflare.com/workers/platform/bindings/about-service-bindings/) let your different Cloudflare workers talk to each other, _quickly_. However, it requires sending a mock HTTP request to the worker with which you're trying to communicate—which gives a lot of flexibility, but is sometimes more overhead than needed. This library simplifies that by letting you directly call functions on other Cloudflare workers.
 
+In essenced, your code will go from looking like this:
+```js
+await env.test.fetch('http://workerb/hello', {
+    method: 'POST',
+    body: JSON.stringify({params: 'World'})
+})
+```
+to looking like this:
+```js
+await env.test.hello('World')
+```
+
 ## Concepts
 - Each worker is either a _service_ worker, or a _consumer_ worker. 
 - A _consumer_ worker can call functions from the _service_ workers it's bound to.
