@@ -1,7 +1,7 @@
 # ergonomic-service-bindings
 >Ergonomic Service Bindings for Cloudflare Workers: no more HTTP calls—directly call functions from your other workers
 
-[Service Bindings](https://developers.cloudflare.com/workers/platform/bindings/about-service-bindings/) let your different Cloudflare workers talk to each other, _quickly_. However, it requires sending a mock HTTP request to the other worker with which you're trying to communicate—which gives a lot of flexibility, but is sometimes more overhead than needed. This library simplifies that by letting you directly call functions on other Cloudflare workers.
+[Service Bindings](https://developers.cloudflare.com/workers/platform/bindings/about-service-bindings/) let your different Cloudflare workers talk to each other, _quickly_. However, it requires sending a mock HTTP request to the worker with which you're trying to communicate—which gives a lot of flexibility, but is sometimes more overhead than needed. This library simplifies that by letting you directly call functions on other Cloudflare workers.
 
 ## Concepts
 - Each worker is either a _service_ worker, or a _consumer_ worker. 
